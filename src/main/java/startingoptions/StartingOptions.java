@@ -95,6 +95,12 @@ public class StartingOptions implements PostInitializeSubscriber {
 		
 		// get all files from config dir
 		File folder = new File(START_BUILD_DIR);
+		
+		// be careful of nonexistent folder
+		if (!folder.exists()) {
+			folder.mkdir();
+		}
+		
 		logger.info("checking this directory: " + folder.getAbsolutePath());
 		for (File file : folder.listFiles()) {
 			logger.info("file found: " + file.getAbsolutePath());

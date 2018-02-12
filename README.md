@@ -57,3 +57,10 @@ up in game as "ironclad_1" when choosing between loadouts.
 	<relic>Ring of the Snake</relic>
 </silent>
 ```
+
+## Changelog
+
+### v1.0.0
+* Created the mod after making some additions to BaseMod to enable the necessary functionality
+* Allows for making loadouts using `xml` files and loading them through a *really* rough UI\
+* Currently requires 
