@@ -175,11 +175,13 @@ public class StartingOptions implements PostInitializeSubscriber {
 	public static void initialize() {
 		logger.info("========================= STARTINGOPTIONS INIT =========================");
 		
+		@SuppressWarnings("unused")
 		StartingOptions so = new StartingOptions();
 		
 		logger.info("================================================================");
 	}
 
+	@SuppressWarnings("deprecation")
 	@Override
 	public void receivePostInitialize() {
 		// gui setup here
