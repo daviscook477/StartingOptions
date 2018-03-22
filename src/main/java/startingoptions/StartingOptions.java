@@ -36,6 +36,7 @@ public class StartingOptions implements PostInitializeSubscriber {
 	public static final String DESCRIPTION = "v1.0.0 provides a way to customize loadout";
 	
 	public static final String START_BUILD_DIR = "starts/";
+	public static final String XML_EXTENSION = "xml";
 	
 	private ArrayList<StartConfig> ironcladConfigs;
 	private ArrayList<StartConfig> silentConfigs;
@@ -106,8 +107,8 @@ public class StartingOptions implements PostInitializeSubscriber {
 			logger.info("file found: " + file.getAbsolutePath());
 			String extension = FileUtils.getFileExtension(file);
 			logger.info("file had extension: " + extension);
-			if (extension.equals("xml")) {
-				logger.info("extension was xml - parsing file");
+			if (extension.equals(XML_EXTENSION)) {
+				logger.info("extension was " + XML_EXTENSION + " - parsing file");
 				StartConfig cfg = parseConfig(file);
 				switch (cfg.charClass) {
 				case IRONCLAD:
