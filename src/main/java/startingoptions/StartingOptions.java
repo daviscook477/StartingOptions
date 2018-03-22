@@ -18,6 +18,7 @@ import org.xml.sax.SAXException;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
+import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 
 import basemod.BaseMod;
 import basemod.ModPanel;
@@ -28,6 +29,7 @@ import basemod.interfaces.PostCreateSilentStartingRelicsSubscriber;
 import basemod.interfaces.PostInitializeSubscriber;
 import startingoptions.StartConfig.CharacterClass;
 
+@SpireInitializer
 public class StartingOptions implements PostInitializeSubscriber {
 	public static final Logger logger = LogManager.getLogger(StartingOptions.class.getName());
 	

@@ -4,5 +4,6 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="C:/Users/Davis/git/_ModTheSpire/mods/BaseMod.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Davis/git/_lib/desktop-1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Davis/git/lib/ModTheSpire.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
